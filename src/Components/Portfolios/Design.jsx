@@ -2,7 +2,7 @@ import PortfolioSection from "../Page/Portfolio";
 function Design() {
   return (
     <PortfolioSection>
-      <main className="grid grid-cols-3 p-4 gap-4 mt-8">
+      {/* <main className="grid grid-cols-3 p-4 gap-4 mt-8">
         <img
           src="../src/assets/Portfolio/Mockup-Design-1.jpg"
           alt=""
@@ -23,7 +23,8 @@ function Design() {
           alt=""
           className="shadow-md rounded-md hover:scale-105 transition-all"
         />
-      </main>
+      </main> */}
+      <h1>Design</h1>
     </PortfolioSection>
   );
 }
