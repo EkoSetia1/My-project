@@ -12,6 +12,10 @@ import Design from "./Components/Portfolios/Design.jsx";
 import Photography from "./Components/Portfolios/Photography.jsx";
 
 const router = createBrowserRouter([
+   {
+    path: "/",
+    element: <HomeSection />,
+  },
   {
     path: "/Home",
     element: <HomeSection />,
