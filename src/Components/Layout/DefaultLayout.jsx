@@ -73,7 +73,9 @@ function DefaultLayout(props) {
         </nav>
       </div>
 
-      <div className="bg-slate-100 w-[80%] max-md:w-full ">{children}</div>
+      <div className="bg-slate-100 w-[80%] max-md:w-full text-stone-900 ">
+        {children}
+      </div>
     </div>
   );
 }
