@@ -20,7 +20,7 @@ function DefaultLayout(props) {
   // end active link
 
   return (
-    <div className="flex min-h-screen ">
+    <div className="flex min-h-screen text-stone-900 ">
       {/* tombol humbeger */}
       <Menu
         className="absolute md:hidden left-3 top-3 "
