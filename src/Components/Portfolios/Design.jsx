@@ -1,30 +1,21 @@
 import PortfolioSection from "../Page/Portfolio";
+import CardPortofolio from "../Atom/CardPortofolio";
+import Design1 from "../../assets/design-1.png";
+import Design2 from "../../assets/design-2.jpg";
+import Design3 from "../../assets/design-3.jpg";
+import Design4 from "../../assets/design-4.jpg";
+import Design5 from "../../assets/design-5.jpg";
 function Design() {
   return (
-    <PortfolioSection>
-      {/* <main className="grid grid-cols-3 p-4 gap-4 mt-8">
-        <img
-          src="../src/assets/Portfolio/Mockup-Design-1.jpg"
-          alt=""
-          className="shadow-md rounded-md hover:scale-105 transition-all"
-        />
-        <img
-          src="../src/assets/Portfolio/Mockup-Design-2.jpg"
-          alt=""
-          className="shadow-md rounded-md hover:scale-105 transition-all"
-        />
-        <img
-          src="../src/assets/Portfolio/Mockup-Design-3.jpg"
-          alt=""
-          className="shadow-md rounded-md hover:scale-105 transition-all"
-        />
-        <img
-          src="../src/assets/Portfolio/Mockup-Design-4.jpg"
-          alt=""
-          className="shadow-md rounded-md hover:scale-105 transition-all"
-        />
-      </main> */}
-      <h1>Design</h1>
+    <PortfolioSection layout="columns-4 space-y-4  max-md:columns-2 ">
+      <CardPortofolio img={Design1} />
+      <CardPortofolio img={Design3} />
+      <CardPortofolio img={Design2} />
+      <CardPortofolio img={Design4} />
+      <CardPortofolio img={Design5} />
+      <CardPortofolio img={Design2} />
+      <CardPortofolio img={Design4} />
+      <CardPortofolio img={Design5} />
     </PortfolioSection>
   );
 }

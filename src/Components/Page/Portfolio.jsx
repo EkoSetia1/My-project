@@ -15,7 +15,7 @@ function PortfolioSection(props) {
     }
     return classes;
   }
-  const { children } = props;
+  const { children, layout = "grid grid-cols-2" } = props;
   return (
     <DefaultLayout>
       <ContentLayout title="Portfolio">
@@ -33,7 +33,7 @@ function PortfolioSection(props) {
               </li>
             </ul>
           </nav>
-          <section className="mt-8 grid grid-cols-2 max-md:grid-cols-1 gap-4">
+          <section className={`mt-8 ${layout} max-md:grid-cols-1 gap-4`}>
             {children}
           </section>
         </main>

@@ -20,10 +20,10 @@ function DefaultLayout(props) {
   // end active link
 
   return (
-    <div className="flex min-h-screen text-stone-900 ">
+    <div className="flex  min-h-screen text-stone-900 ">
       {/* tombol humbeger */}
       <Menu
-        className="absolute md:hidden left-3 top-3 "
+        className="absolute z-30 md:hidden left-3 top-3 "
         size={30}
         color="#f59e0b"
         onClick={() => {
@@ -51,9 +51,9 @@ function DefaultLayout(props) {
         </ul>
       </div>
 
-      {/* end tombol umbeger */}
-      <div className="bg-amber-500 w-[20%] max-md:hidden ">
-        <div className=" h-[40%] bg-cover bg-[url('../src/assets/ayano.jpg')] "></div>
+      {/* end tombol humbeger */}
+      <div className="bg-amber-500 w-[20%] max-md:hidden fixed left-0 top-0 bottom-0 ">
+        <div className=" h-[40%] bg-cover bg-center bg-[url('../src/assets/ayano.jpg')] "></div>
         <nav className="flex justify-center text-xl items-center font-semibold h-[60%]">
           <ul className="flex flex-col items-center gap-8 cursor-pointer">
             <li className={Linkness("Home")}>
@@ -73,7 +73,7 @@ function DefaultLayout(props) {
         </nav>
       </div>
 
-      <div className="bg-slate-100 w-[80%] max-md:w-full text-stone-900 ">
+      <div className="bg-slate-100 right-0 absolute  w-[80%] max-md:w-full text-stone-900 ">
         {children}
       </div>
     </div>
