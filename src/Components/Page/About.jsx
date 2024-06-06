@@ -31,17 +31,17 @@ function AboutSection() {
               <CardAbout title="10+" paragraph="Happy clients" />
               <CardAbout title="SS+" paragraph="Profesional Admin" />
             </div>
-            <div className="max-md:col-span-2 max-md:flex max-md:flex-col max-md:items-center max-md:gap-4 ">
+            <div className="max-md:col-span-2 max-md:flex max-md:flex-col max-md:items-center  max-md:gap-8 ">
               <h1 className="text-2xl mb-1 font-semibold  ">What I Do?</h1>
-              <Service Icon={Layout} title="Web Development">
+              <Service Icon={Layout} title="Web Development" link="Website">
                 I can create a website application for your business with
                 guaranteed quality
               </Service>
-              <Service Icon={PenTool} title="Design">
+              <Service Icon={PenTool} title="Design" link="Design">
                 solution when you need website design services or high quality
                 photos and videos
               </Service>
-              <Service Icon={Camera} title="Photography">
+              <Service Icon={Camera} title="Photography" link="Photography">
                 with photography skills that are guaranteed to make your epic
                 moments unforgettable
               </Service>
