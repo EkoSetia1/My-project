@@ -26,7 +26,7 @@ function ContactSection() {
               </button>
             </form>
           </aside>
-          <aside className="bg-stone-900 text-slate-100 p-4 flex flex-col gap-4 w-1/3 max-md:w-full">
+          <aside className="bg-stone-900 text-slate-100 p-4  flex flex-col gap-4 w-1/3 max-md:w-full">
             <h1 className="text-3xl font-semibold">Info</h1>
             <div className="flex flex-col gap-4">
               <InfoContact Icon={Mail}>ekosetia1yt@gmail.com</InfoContact>

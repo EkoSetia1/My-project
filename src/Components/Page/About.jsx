@@ -16,7 +16,7 @@ function AboutSection() {
               </span>
               Web Developer / Designer
             </h1>
-            <p className="text-slate-500 leading-5">
+            <p className="text-slate-500 leading-5 max-md:text-sm max-md:leading-4">
               I live in Pemalang, Jawa Tengah. I have experience in this field
               for more than 4 years since I was still at school, so I can help
               you in working on web development or design projects

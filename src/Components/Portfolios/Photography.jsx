@@ -16,12 +16,12 @@ function Photography() {
   return (
     <PortfolioSection layout="columns-4 space-y-4  max-md:columns-2 ">
       <CardPortofolio img={Photo1} />
-      <CardPortofolio img={Photo2} />
       <CardPortofolio img={Photo3} />
       <CardPortofolio img={Photo4} />
       <CardPortofolio img={Photo5} />
       <CardPortofolio img={Photo6} />
       <CardPortofolio img={Photo7} />
+      <CardPortofolio img={Photo2} />
       <CardPortofolio img={Photo8} />
       <CardPortofolio img={Photo9} />
       <CardPortofolio img={Photo10} />
