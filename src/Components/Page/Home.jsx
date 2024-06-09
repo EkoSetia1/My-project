@@ -15,7 +15,7 @@ function HomeSection() {
           <p className="text-slate-500">Web Developer | Designer</p>
 
           <button className="mt-16 px-6 py-3  bg-amber-500 text-stone-900 font-semibold rounded-badge hover:bg-amber-600">
-            Download CV
+            <a href="../../public/Eko Setiawan.pdf">Download CV</a>
           </button>
         </main>
       </ContentLayout>

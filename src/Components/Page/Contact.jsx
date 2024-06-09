@@ -3,8 +3,31 @@ import ContentLayout from "../Layout/ContentLayout";
 import DefaultLayout from "../Layout/DefaultLayout";
 import { Mail, Phone, Linkedin, Instagram } from "react-feather";
 import InfoContact from "../Atom/Info";
+// emailjs
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 function ContactSection() {
+  // emailjs
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_6b0ws5i", "template_3s6ll8l", form.current, {
+        publicKey: "LN4nHpQfssimu9ezl",
+      })
+      .then(
+        () => {
+          alert("SUCCESS!");
+        },
+        (error) => {
+          alert("FAILED...", error.text);
+        }
+      );
+  };
+
   return (
     <DefaultLayout>
       <ContentLayout title="Contact" style="max-md:px-4">
@@ -14,7 +37,7 @@ function ContactSection() {
               Feel free to contact me any time. i will get back to you as soon
               as possible
             </p>
-            <form className="flex flex-col">
+            <form className="flex flex-col " ref={form} onSubmit={sendEmail}>
               <Input type="text" name="name" />
               <Input type="email" name="email" />
               <Input type="text" name="message" />
