@@ -7,7 +7,14 @@ import InfoContact from "../Atom/Info";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 function ContactSection() {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   // emailjs
   const form = useRef();
 
@@ -32,7 +39,7 @@ function ContactSection() {
     <DefaultLayout>
       <ContentLayout title="Contact" style="max-md:px-4">
         <main className="flex justify-between gap-8 max-md:flex-col">
-          <aside className=" w-2/3 max-md:w-full">
+          <aside data-aos="fade-right" className=" w-2/3 max-md:w-full">
             <p className="font-medium text-slate-500">
               Feel free to contact me any time. i will get back to you as soon
               as possible
@@ -49,7 +56,10 @@ function ContactSection() {
               </button>
             </form>
           </aside>
-          <aside className="bg-stone-900 text-slate-100 p-4  flex flex-col gap-4 w-1/3 max-md:w-full">
+          <aside
+            data-aos="fade-left"
+            className="bg-stone-900 text-slate-100 p-4  flex flex-col gap-4 w-1/3 max-md:w-full"
+          >
             <h1 className="text-3xl font-semibold">Info</h1>
             <div className="flex flex-col gap-4">
               <InfoContact Icon={Mail}>ekosetia1yt@gmail.com</InfoContact>

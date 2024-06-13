@@ -3,12 +3,18 @@ import DefaultLayout from "../Layout/DefaultLayout";
 import CardAbout from "../Atom/CardAbout";
 import Service from "../Atom/Service";
 import { Camera, Layout, PenTool } from "react-feather";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 function AboutSection() {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <DefaultLayout>
       <ContentLayout title="About" style=" px-16 max-md:px-4  ">
         <section>
-          <div className="mb-8">
+          <div data-aos="fade-right" className="mb-8">
             <h1 className="text-3xl font-light mb-4">
               Im{" "}
               <span className="font-extrabold">
@@ -25,13 +31,22 @@ function AboutSection() {
             </p>
           </div>
           <div className="grid grid-cols-3  max-md:grid-cols-2 gap-x-8  ">
-            <div className="bg-stone-900 max-md:order-2 max-md:mt-4 col-span-2  p-8 grid grid-cols-2 gap-y-10">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="500"
+              className="bg-stone-900 max-md:order-2 max-md:mt-4 col-span-2  p-8 grid grid-cols-2 gap-y-10"
+            >
               <CardAbout title="4+" paragraph="Years of experience" />
               <CardAbout title="10+" paragraph="Completed projects" />
               <CardAbout title="10+" paragraph="Happy clients" />
               <CardAbout title="SS+" paragraph="Profesional Admin" />
             </div>
-            <div className="max-md:col-span-2 max-md:flex max-md:flex-col max-md:items-center  max-md:gap-8 ">
+            <div
+              data-aos="fade-left"
+              data-aos-delay="300"
+              data-aos-duration="300"
+              className="max-md:col-span-2 max-md:flex max-md:flex-col max-md:items-center  max-md:gap-8 "
+            >
               <h1 className="text-2xl mb-1 font-semibold  ">What I Do?</h1>
               <Service Icon={Layout} title="Web Development" link="Website">
                 I can create a website application for your business with
