@@ -12,7 +12,7 @@ import Design from "./Components/Portfolios/Design.jsx";
 import Photography from "./Components/Portfolios/Photography.jsx";
 
 const router = createBrowserRouter([
-   {
+  {
     path: "/",
     element: <HomeSection />,
   },
@@ -20,6 +20,7 @@ const router = createBrowserRouter([
     path: "/Home",
     element: <HomeSection />,
   },
+
   {
     path: "/About",
     element: <AboutSection />,

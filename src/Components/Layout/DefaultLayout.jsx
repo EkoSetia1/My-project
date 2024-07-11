@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu } from "react-feather";
+
+import Aos from "aos";
+import "aos/dist/aos.css";
 function DefaultLayout(props) {
   const { children } = props;
+
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
 
   // activeLink
   let { pathname } = useLocation();
@@ -33,7 +40,7 @@ function DefaultLayout(props) {
           // alert("hello");
         }}
       />
-      <div className="md:hidden Navbar-active absolute z-10 bg-amber-500 -left-full top-1/2  -translate-y-1/2 rounded-r-lg p-4 shadow-md   ">
+      <div className="md:hidden  Navbar-active absolute z-10 bg-amber-500 -left-full top-1/2  -translate-y-1/2 rounded-r-lg p-4 shadow-md">
         <ul className="flex flex-col items-center gap-8 cursor-pointer font-semibold">
           <li className={Linkness("Home")}>
             <Link to="/Home">Home</Link>

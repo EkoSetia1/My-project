@@ -3,6 +3,7 @@ import ContentLayout from "../Layout/ContentLayout";
 import DefaultLayout from "../Layout/DefaultLayout";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 function HomeSection() {
   useEffect(() => {
@@ -41,7 +42,9 @@ function HomeSection() {
             data-aos-duration="300"
             className="mt-16 px-6 py-3  bg-amber-500 text-stone-900 font-semibold rounded-badge hover:bg-amber-600"
           >
-            <a href="../../public/Eko Setiawan.pdf">Download CV</a>
+            <a href="../public/Eko Setiawan.pdf" target="_blank">
+              Download CV
+            </a>
           </button>
         </main>
       </ContentLayout>
