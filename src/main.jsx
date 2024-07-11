@@ -10,6 +10,7 @@ import HomeSection from "./Components/Page/Home.jsx";
 import Website from "./Components/Portfolios/Website.jsx";
 import Design from "./Components/Portfolios/Design.jsx";
 import Photography from "./Components/Portfolios/Photography.jsx";
+import CV from "../public/Eko Setiawan.pdf";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: "/Home",
     element: <HomeSection />,
+  },
+  {
+    path: "/public/Eko%20Setiawan.pdf",
+    element: <CV />,
   },
 
   {
